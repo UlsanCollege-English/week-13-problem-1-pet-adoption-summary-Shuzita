@@ -38,10 +38,7 @@ def test_edge_cases(adoptions, expected):
     [
         (["a"] * 1000, 1),
         ([str(i % 10) for i in range(1000)], 10),
-        (
-            ["dog"] * 500 + ["cat"] * 300 + ["rabbit"] * 200,
-            3,
-        ),
+        (["dog"] * 500 + ["cat"] * 300 + ["rabbit"] * 200, 3),
     ],
 )
 def test_larger_inputs(adoptions, expected_keys_count):
